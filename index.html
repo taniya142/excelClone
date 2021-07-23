@@ -6,17 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="title-section" contenteditable="true">Book1 - Excel</div>
 
         <div class="menubar-section">
-            <div>File</div>
+            <div data-open="false">File</div>
             <div>Help</div>
         </div>
 
-        <div class= "menu-options"></div>
+        <div class= "menu-options">
+            <div class="bold-italics-underline">
+                <span class="material-icons">
+                    format_bold
+                </span>
+                <span class="material-icons">
+                    format_italic
+                </span>
+                <span class="material-icons">
+                    format_underlined
+                </span>
+            </div>
+            <div class="font-type-size">
+                <select>
+                    <option>Arial</option>
+                    <option>New Times Roman</option>
+                </select>
+                <select>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>14</option>
+                </select>
+            </div>
+            <div class="align-cell-content">
+                <span class="material-icons">
+                    format_align_left
+                </span>
+                <span class="material-icons">
+                    format_align_center
+                </span>
+                <span class="material-icons">
+                    format_align_right
+                </span>
+            </div>
+            <div class="cell-color-options">
+                <span class="material-icons">
+                    format_color_fill
+                </span>
+                <span class="material-icons">
+                    format_color_text
+                </span>
+            </div>
+        </div>
 
         <div class="formula-section">
             <div class = "selected-cell"> </div>
@@ -40,6 +84,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="styleScript.js"></script>
 
 </body>
 </html>
